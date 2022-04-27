@@ -1,0 +1,117 @@
+/* CSS relating to the To-Do list HTML page */
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #CC0B0D;
+    color: white;
+    font-size: 30px;
+}
+
+.mainContent {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#newEntry {
+    width: 80%;
+    padding: 12px 25px;
+    margin: 0;
+}
+
+.listItm {
+    list-style: none;
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 25px;
+    padding-left: 6rem;
+    padding-right: 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+
+.finished {
+    background-color: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Buttons */
+#addBtn {
+    background-color: #A1A1A6; 
+    border: 2px solid #A1A1A6;
+    font-weight: bold;
+    color: white;
+    padding: 10px 25px;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    border: 2px solid #A1A1A6;
+    background-color: #E5E5E5; 
+    color: #A1A1A6; 
+} 
+
+.deleteBtn {
+    background-color: white;
+    color: black;
+    float: right; 
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 11px 25px;
+    margin: 0;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    border: 2px solid red;
+    background-color: red; 
+    color: white; 
+} 
+
+.finishedBtn {
+    background-color: #888;
+    color: black;
+    float: right; 
+    border: 2px solid #888;
+    font-weight: bold;
+    padding: 11px 25px;
+    margin: 0;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.finishedBtn:hover {
+    border: 2px solid red;
+    background-color: red; 
+    color: white; 
+} 

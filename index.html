@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Coding Challenge To-Do List (Dennis Shu Liang)
+
+This file links the addToList.js file as well as the toDoList.css file
+to create a To-Do list with the following functionality:
+
+- Input box allowing users to enter a string 
+- Removal of an addition in the To-Do list
+- Marking an item to be complete within the To-Do list
+- Filtering the To-Do list by completion, incompletion and all items
+- Sort functionality to sort the entries by the earliest and latest entry
+
+-->
+<html>
+    <head>
+        <title>To-Do List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS file -->
+        <link href="toDoList.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="header">
+            <h1>My To Do List</h1>
+            <p>Dennis Shu Liang</p>
+            <input type="text" placeholder="To Do..." id="newEntry">
+            <button onclick="addToList()" id="addBtn">ADD</button>
+            <div>
+                <label for="filterOptions">Filter By:</label>
+                <select name="filterOptions" id="filterOptions" onchange="addToList.filter(this.value)">
+                    <option selected disabled>- Select -</option>
+                    <option value="all">All Items</option>
+                    <option value="complete">Complete</option>
+                    <option value="incomplete">To-Do</option>
+                </select>
+                <label for="sortOptions">Sort By:</label>
+                <select name="sortOptions" id="sortOptions" onchange="addToList.sort(this.value)">
+                    <option selected disabled>- Select -</option>
+                    <option>Earliest</option>
+                    <option value="reverse">Latest</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="mainContent">
+            <ul id="toDoList"></ul>
+        </div>
+
+
+        <!-- JavaScript file -->
+        <script src="addToList.js"></script>
+    </body>
+</html>
